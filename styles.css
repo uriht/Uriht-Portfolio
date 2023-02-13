@@ -1,6 +1,6 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
@@ -8,7 +8,7 @@
 
 :root {
     --primary-color: #FFCF00;
-    --secondary-color: #262626
+    --secondary-color: #262626;
 }
 
 ::selection {
@@ -26,7 +26,7 @@ html {
 }
 
 #header {
-    background-image: url('https://i.ibb.co/PYMQ9qW/background-desktop.png');
+    background-image: url("https://i.ibb.co/PYMQ9qW/background-desktop.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -45,8 +45,8 @@ html {
     color: black;
 }
 
-span.bgcolor,
-.bgcolor {
+.bgcolor,
+span.bgcolor {
     background-color: var(--primary-color);
     display: inline-block;
     padding: 0 5px;
@@ -65,7 +65,7 @@ span.bgcolor,
 
 .btn {
     display: block;
-    margin: 20px auto 0px auto;
+    margin: 20px auto 0;
     border: 1px solid var(--primary-color);
     padding: 10px 30px;
     border-radius: 5px;
@@ -103,6 +103,7 @@ nav ul li {
     display: inline-block;
     margin-right: 18px;
     position: relative;
+    text-decoration: none;
 }
 
 nav ul li a {
@@ -120,11 +121,11 @@ nav ul li a span {
 
 nav ul li a::after {
     content: '';
-    width: 0%;
+    width: 0;
     height: 3px;
     background: var(--primary-color);
     position: absolute;
-    left: 0px;
+    left: 0;
     bottom: -6px;
     transition: width 0.5s;
 }
@@ -146,7 +147,6 @@ nav ul li a:hover::after {
     font-size: 50px;
     font-weight: 800;
 }
-
 
 /* ------------------- About ------------------- */
 
@@ -201,11 +201,11 @@ nav ul li a:hover::after {
 
 .about-col-2 ul li::after {
     content: '';
-    width: 0%;
+    width: 0;
     height: 3px;
     background: var(--primary-color);
     position: absolute;
-    left: 0px;
+    left: 0;
     bottom: -6px;
     transition: width 0.5s;
 }
@@ -313,10 +313,10 @@ nav ul li a:hover::after {
 
 #portfolio .layer {
     position: absolute;
-    right: 0px;
-    bottom: 0px;
+    right: 0;
+    bottom: 0;
     width: 100%;
-    height: 0%;
+    height: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -351,7 +351,6 @@ nav ul li a:hover::after {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-
 
 }
 
@@ -466,7 +465,7 @@ footer {
     }
 
     #header {
-        background-image: url('https://i.ibb.co/0BhZxsw/background-mobile.png');
+        background-image: url("https://i.ibb.co/0BhZxsw/background-mobile.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -475,14 +474,14 @@ footer {
 
     nav ul {
         position: absolute;
-        top: 0px;
+        top: 0;
         right: -500px;
         height: 100vh;
         width: 40%;
         background: var(--primary-color);
         display: flex;
         flex-direction: column;
-        padding: 25px 25px;
+        padding: 25px;
         z-index: 4;
     }
 
