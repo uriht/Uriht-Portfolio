@@ -321,7 +321,7 @@ nav ul li a:hover::after {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(0deg, rgba(255, 207, 0, 0.8694698033707865) 0%, rgba(38, 38, 38, 0.644750702247191) 100%);
+    background: linear-gradient(0deg, rgb(0, 217, 255) 0%, rgba(38, 38, 38, 0.644750702247191) 100%);
     border-radius: 17px;
     padding: 0 40px;
     text-align: center;
