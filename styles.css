@@ -7,8 +7,8 @@
 }
 
 :root {
-    --primary-color: #00d9ff;
-    --secondary-color: #262626;
+    --primary-color: #ff9900;
+    --secondary-color: #ffffff;
 }
 
 ::selection {
@@ -26,7 +26,7 @@ html {
 }
 
 #header {
-    background-image: url("https://i.ibb.co/PYMQ9qW/background-desktop.png");
+    background-image: url("img/port_bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
