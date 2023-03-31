@@ -267,7 +267,7 @@ nav ul li a:hover::after {
 }
 
 .services-col {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     padding: 20px;
     border-radius: 17px;
     transition: background 1s, color 1s, transform 0.5s;
@@ -289,9 +289,9 @@ nav ul li a:hover::after {
 
 .services-col a {
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: 600;
-    color: var(--primary-color);
+    color: var(black);
 }
 
 .services-col:hover {
@@ -742,4 +742,28 @@ footer {
 
 .mobile-nav-active #header {
     left: 0;
+}
+.images {
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape {
+    bottom: 40px;
+}
+
+.images:hover .girl {
+    left: 45%;
 }

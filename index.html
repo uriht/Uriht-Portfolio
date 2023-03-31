@@ -15,10 +15,8 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
             rel="stylesheet">
-        <link
-            rel="shortcut icon"
-            href="img/fav-uriht.png"
-            type="image/x-icon">
+        <link rel="stylesheet/stylus" href="tech_style.styl">
+        <link rel="shortcut icon" href="img/fav-uriht.png" type="image/x-icon">
         <link rel="stylesheet" href="styles.css">
         <!-- Font Awsome Icons -->
         <script src="https://kit.fontawesome.com/2786bc3471.js" crossorigin="anonymous"></script>
@@ -30,24 +28,13 @@
             <div class="container">
                 <nav>
                     <!-- <img src="fav-uriht.png" class="logo"> -->
-                    <!-- <ul id="mobile-menu">
-                        <li>
-                            <a href="#header">Home<span class="color">.</span></a>
-                        </li>
-                        <li>
-                            <a href="#about">About<span class="color">.</span></a>
-                        </li>
-                        <li>
-                            <a href="#services">Education<span class="color">.</span></a>
-                        </li>
-                        <li>
-                            <a href="#portfolio">Projects<span class="color">.</span></a>
-                        </li>
-                        <li>
-                            <a href="#contact">Contact<span class="color">.</span></a>
-                        </li>
-                        <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
-                    </ul> -->
+                    <!-- <ul id="mobile-menu"> <li> <a href="#header">Home<span
+                    class="color">.</span></a> </li> <li> <a href="#about">About<span
+                    class="color">.</span></a> </li> <li> <a href="#services">Education<span
+                    class="color">.</span></a> </li> <li> <a href="#portfolio">Projects<span
+                    class="color">.</span></a> </li> <li> <a href="#contact">Contact<span
+                    class="color">.</span></a> </li> <i class="fa-solid fa-xmark"
+                    onclick="closeMenu()"></i> </ul> -->
                     <p onclick="openMenu()">
                         <i class="fa-solid fa-bars" onclick="openMenu()"></i>
                     </p>
@@ -60,6 +47,10 @@
                         Certified
                         <span class="bgcolor">AWS Cloud Practitioner</span>
                     </h1>
+                </div>
+                <div class="images">
+                    <img src="img/shape.png" class="shape">
+                    <img src="img/uriht1.png" class="girl">
                 </div>
 
             </div>
@@ -150,7 +141,7 @@
                 <h2 class="sub-title">Technical Skills<span class="color">.</span></h2>
                 <div class="row">
                     <div class="services-col">
-                        <i class="fa-brands fa-app-store"></i><br>
+                        <i class="fa-brands"></i><br>
                         <h3>Technical Experience</h3>
                         <h3 class="color-black">Volunteered as a Skill Trainer:</h3>
                         <p>
@@ -185,7 +176,7 @@
                         <a href="#">learn more</a>
                     </div>
                     <div class="services-col">
-                        <i class="fa-brands fa-google-play"></i><br>
+                        <i class="fa-brands"></i><br>
                         <h3>Online Courses</h3>
                         <h3 class="color-black">Django Features and Libraries by University of Michigan via Coursera</h3>
                         <p>
@@ -206,7 +197,7 @@
                         <a href="#">learn more</a>
                     </div>
                     <div class="services-col">
-                        <i class="fa-brands fa-microsoft"></i>
+                        <i class="fa-brands"></i>
                     </i>
                     <h3>Co-Curricular Activities</h3>
                     <h3 class="color-black">Django Features and Libraries by University of Michigan via Coursera</h3>
@@ -237,7 +228,7 @@
             <h2 class="sub-title">Extra-Curriculars<span class="color">.</span></h2>
             <div class="row">
                 <div class="services-col">
-                    <i class="fa-brands fa-app-store"></i><br>
+                    <i class="fa-brands"></i><br>
                     <h3 class="color-black">Athletics(Race Walk)</h3>
                     <p class="color-black">
                         <ul>
@@ -283,7 +274,7 @@
                     <a href="#">learn more</a>
                 </div>
                 <div class="services-col">
-                    <i class="fa-brands fa-google-play"></i><br>
+                    <i class="fa-brands"></i><br>
                     <h3>Online Courses</h3>
                     <h3 class="color-black">Django Features and Libraries by University of Michigan via Coursera</h3>
                     <p>
@@ -304,7 +295,7 @@
                     <a href="#">learn more</a>
                 </div>
                 <div class="services-col">
-                    <i class="fa-brands fa-microsoft"></i>
+                    <i class="fa-brands"></i>
                 </i>
                 <h3>Co-Curricular Activities</h3>
                 <h3 class="color-black">Django Features and Libraries by University of Michigan via Coursera</h3>
@@ -332,7 +323,7 @@
 <!------------------------------ Portfolio ------------------------------>
 <div id="portfolio">
     <div class="container">
-        <h2 class="sub-title">Team - Projects<span class="color">.</span></h2>
+        <h2 class="sub-title">Web Development - Projects<span class="color">.</span></h2>
         <div class="row">
             <div class="portfolio-col">
                 <img src="img/mc-gen.png">
@@ -380,16 +371,18 @@
 
 <div id="portfolio">
     <div class="container">
-        <h2 class="sub-title">Individual - Projects<span class="color">.</span></h2>
+        <h2 class="sub-title">Cloud - Projects<span class="color">.</span></h2>
         <div class="row">
             <div class="portfolio-col">
                 <img src="img/mc-gen.png">
                 <div class="layer">
-                    <h3 class="color">MC Gen</h3>
+                    <h3 class="color">Deployed a Static Webpage in EC2 instance</h3>
                     <p>MC Gen is a Medical Certificate Generator built with PHP that automates the
                         process of generating medical certificates in PDF format, providing a secure and
                         convenient experience for both healthcare providers and patients.</p>
-                    <a href="#">
+                    <a
+                        target="_blank"
+                        href="https://www.linkedin.com/posts/uriht_git-visualstudiocode-awss3bucket-activity-7046877911059988480-JI95?utm_source=share&utm_medium=member_desktop">
                         <i class="fa-solid fa-link"></i>
                     </a>
                 </div>
