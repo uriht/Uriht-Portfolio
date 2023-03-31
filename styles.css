@@ -83,6 +83,10 @@ span.bgcolor {
     color: black;
 }
 
+.resume-text{
+
+}
+
 /* -------------------------------------------------------*/
 main {
     margin-left: 250px;
@@ -772,4 +776,185 @@ footer {
 
 .images:hover .girl {
     left: 45%;
+}
+
+/* This is Download CV Button */
+/* Primary */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    color: #fff;
+    background: #1F1F1F;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+/* Button and the icon */
+/* section {
+    width: 100%;
+    height: 100vh;
+    display: table;
+} */
+
+.center {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.center .trigger {
+    position: relative;
+    background: var(--primary-color);
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    border-radius: 50em;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    color: #000000;
+    font-weight: 500;
+}
+
+.center .trigger span,
+strong,
+i {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    /*background: yellow;
+	opacity: .5;*/
+}
+
+.center .trigger strong,
+i {
+    transition: top 0.3s;
+}
+
+.center .trigger span {
+    /*
+	uncomment this to see where actually the
+	Download and SVG located on initial state
+	and on hover
+	*/
+    overflow: hidden;
+}
+
+.center .trigger strong {
+    line-height: 60px;
+    /*make the button text vertically center of the button*/
+    top: 0;
+}
+
+.center .trigger i::before {
+    content: "Download";
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+}
+
+.center .trigger i {
+    top: 100%;
+    /*moving out the SVG to the bottom on page loads*/
+    padding-top: 20px;
+}
+
+.trigger:hover strong {
+    top: -100%;
+    /* move the Download text to the top*/
+}
+
+.trigger:hover i {
+    top: 0;
+}
+
+/*Tooltip*/
+.trigger::before,
+.trigger::after {
+    position: absolute;
+    opacity: 0;
+    /*hide on page load*/
+    visibility: hidden;
+    /*to stop interaction when user hover on top of the button*/
+    transition: all 0.3s;
+}
+
+.trigger::before {
+    content: "It's in here!";
+    width: 140px;
+    height: 60px;
+    line-height: 60px;
+    /*to make the text vertically center*/
+    background: var(--primary-color);
+    border-radius: 0.25em;
+    bottom: 90px;
+    left: calc(50% - 70px);
+    /*take the left size of the box and pull it left by 70px (half of the box's width) referencing .trigger element as the base*/
+}
+
+/*the triangle below the `File size` box*/
+.trigger::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    /*
+	each border side is 10px width
+	this makes the square 20px width in total
+	left to center = 10px
+	center to right = 10px
+	*/
+    border-top-color: var(--primary-color);
+    left: calc(50% - 10px);
+    /*take the left size of the box and pull it left by 10px (half of the box's width) referencing .trigger element as the base*/
+    bottom: 70px;
+}
+
+.trigger:hover::before,
+.trigger:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*pull down effect for the `File size` box when we hover the button*/
+.trigger:hover::before {
+    bottom: 80px;
+}
+
+.trigger:hover::after {
+    bottom: 60px;
+}
+
+/* This is Resume Text CSS */
+.wrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#text {
+    max-width: 400px;
+    text-align: left;
+    width: 100%;
+    color: var(--secondary-color);
+    font-family: monospace;
+    font-size: 18px;
+}
+
+#text.typing span:last-child {
+    background-color: white;
 }
